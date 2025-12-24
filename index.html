@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <title>Página de Prueba</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Bienvenido al Futuro</h1>
+            <p>Una experiencia digital diseñada con precisión, estética moderna y animaciones fluidas para cautivar tus
+                sentidos.</p>
+            <a href="#features" class="btn">Explorar Más</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="animate-on-scroll" style="font-size: 2.5rem; text-align: center; margin-bottom: 1rem;">
+                Características</h2>
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <article class="card animate-on-scroll">
+                    <h3>Velocidad</h3>
+                    <p>Optimizado para un rendimiento instantáneo. Sin cargas innecesarias, solo contenido puro
+                        entregado a la velocidad de la luz.</p>
+                </article>
+                <!-- Card 2 -->
+                <article class="card animate-on-scroll">
+                    <h3>Diseño</h3>
+                    <p>Una interfaz limpia con efectos de cristal (glassmorphism) que aportan profundidad y elegancia a
+                        cada elemento visual.</p>
+                </article>
+                <!-- Card 3 -->
+                <article class="card animate-on-scroll">
+                    <h3>Fluidez</h3>
+                    <p>Animaciones suaves que responden a tu interacción, creando una sensación de continuidad y vida en
+                        la página.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Info Section -->
+    <section class="gallery">
+        <div class="container gallery-grid">
+            <div class="gallery-image animate-on-scroll">
+                <!-- Reusing the hero bg as a placeholder showcase image since we only have one asset for now, simplified for demo -->
+                <img src="images/hero-bg.png" alt="Diseño Abstracto">
+            </div>
+            <div class="gallery-text animate-on-scroll">
+                <h2>Innovación Visual</h2>
+                <p>
+                    Descubre cómo la combinación de colores vibrantes y estructuras geométricas puede transformar una
+                    simple página de información en una obra de arte digital.
+                </p>
+                <p>
+                    Cada detalle ha sido cuidado para ofrecer la mejor legibilidad sin sacrificar el impacto visual.
+                </p>
+                <a href="#" class="btn" style="background: transparent; border: 1px solid var(--accent-color);">Ver
+                    Galería</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Página de Prueba.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="feature-modal" class="modal hidden">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <span id="modal-icon" class="modal-icon">✨</span>
+            <h2 id="modal-title" style="margin-bottom: 1rem; color: var(--accent-color);">Título</h2>
+            <p id="modal-desc" style="color: var(--text-primary); font-size: 1.1rem;">Descripción del detalle.</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
